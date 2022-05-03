@@ -1,118 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>HAUKAI - Hours</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta charset="utf-8">
-        <link rel="stylesheet"  href="styles.css">   
-        <!-- W3.CSS framework import-->
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <head>
+    <title>HAUKAI - Hours</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- W3.CSS framework import-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <body>
+    <!-- Responsive Menu -->
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <div class="w3-top w3-bar">
+          <a
+            href="/index.html"
+            class="w3-bar-item w3-button w3-black w3-hover-sand"
+            >Home</a
+          >
+          <a href="/about.html" class="active">About</a>
+          <a
+            href="/contact.html"
+            class="w3-bar-item w3-button w3-black w3-hover-sand"
+            >Contact</a
+          >
+          <a
+            href="/menu.html"
+            class="w3-bar-item w3-button w3-black w3-hover-sand"
+            >Menu</a
+          >
+          <a
+            href="/hours.html"
+            class="w3-bar-item w3-button w3-black w3-hover-sand"
+            >Hours</a
+          >
+          <a
+            href="/reservations.html"
+            class="w3-bar-item w3-button w3-black w3-hover-sand"
+            >Reservations</a
+          >
+          <a
+            href="/staff_login.html"
+            class="w3-right w3-bar-item w3-button w3-black w3-hover-sand"
+            >Staff log-in</a
+          >
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars w3-white"></i>
+          </a>
+        </div>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+    </nav>
+    <header>
+      <div class="w3-center">
+        <h1>MO HAUKAI | ABOUT HAUKAI</h1>
+      </div>
+    </header>
+    <main id="wrapper">
+      <hr style="color: white" />
+      <div class="w3-row">
+        <!--IMAGE https://www.pexels.com/photo/a-couple-holding-their-rabbit-pets-10649881/-->
+        <div class="w3-half">
+          <img
+            id="left"
+            src="./images/about_gimp.webp"
+            alt="young couple holding rabbits"
+          />
+        </div>
+        <!--ABOUT INFO-->
+        <div class="w3-half w3-container">
+          <p>
+            Kia ora!<br />
+            Nau mai haere mai! <br />
+            We are Wiremu and Soul Puru. Both born and raised in a small town
+            north of Whangarei, Kerikeri!<br />
+            We are both passionate about sharing our cultural knowledge with our
+            guests and making your time with us a Te Ao Māori experience with
+            the use of karakia for blessing food and other Māori culture
+            integration into our restaurant.We specialize in traditional Maori
+            kai and can't wait to share it with you!
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="w3-center">
+        <!-- Copyright-->
+        <div class="address">
+          <p>HAUKAI, 2022 <br /></p>
+          <a class="w3-left" href="/contact.html">
+            <span
+              >1 Island Street <br />
+              Kerikeri <br />
+              Bay of Islands <br />09 4014019 <br
+            /></span>
+          </a>
+          <a class="w3-right" href="info@haukai.com">
+            <span> info@haukai.com</span>
+          </a>
+        </div>
+        <button
+          onclick="document.getElementById('id01').style.display='block'"
+          class="w3-button w3-border w3-black w3-hover-green"
+        >
+          Privacy Statement
+        </button>
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-animate-opacity">
+            <div class="w3-container w3-black">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright"
+                >&times;</span
+              >
+              <h2>Privacy Statement</h2>
+            </div>
+            <div class="w3-container">
+              <p class="modal">
+                <br />This pricacy statement will help you understand what
+                information we collect from you as well as how we will use and
+                protect it. <br />
+                We collect personal information from you, including the
+                following:<br />
+                <span
+                  ><b
+                    >- Name<br />
+                    - Email address<br />
+                    - Contact information<br />
+                    - Location<br /></b
+                ></span>
+                Personal information is gathered through our 'Reservation form'.
+                We collect this information in order to process your booking
+                made on our website and collect your location to ensure Google
+                directions are correct. <br />
+                Haukai is committed to keeping your personal data confidential
+                by implementing the latest software to safeguard all
+                information.<br />
+                We will <strong>NOT</strong> disclose your information to ant
+                third parties. <br />We keep your information for 24 hours after
+                the reservation date at which point we securely destroy.
+                <br />You have the right to ask for a copy of any personal
+                information we hold about you, and to ask for it to be corrected
+                if you think it is wrong. <br />If you'd like to ask for a copy
+                of your information, or to have it corrected, please contact us
+                at
+                <span class="bolded">
+                  info@haukai.co.nz, or or 09 401 4019, or 1 Island Street,
+                  Kerkeri, Bay of Islands.</span
+                >
+                <br /><br />
+              </p>
 
-    </head>
-    <body>
-         <!-- Responsive Menu -->
-         <nav>
-              <div class="topnav"  id="myTopnav">
-                 <div class="w3-top w3-bar">
-                     <a  href="/index.html" class="w3-bar-item w3-button w3-black w3-hover-sand">Home</a>
-                     <a  href="/about.html" class="active">About</a>
-                     <a  href="/contact.html" class="w3-bar-item w3-button w3-black w3-hover-sand">Contact</a>
-                     <a  href="/menu.html" class="w3-bar-item w3-button w3-black w3-hover-sand" >Menu</a>                               
-                     <a  href="/hours.html" class="w3-bar-item w3-button w3-black w3-hover-sand">Hours</a>
-                     <a  href="/reservations.html" class="w3-bar-item w3-button w3-black w3-hover-sand">Reservations</a>
-                     <a  href="/staff_login.html" class="w3-right w3-bar-item w3-button w3-black w3-hover-sand ">Staff log-in</a>
-                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                         <i class="fa fa-bars w3-white"></i>
-                      </a>
-                  </div>
-             </div>
-             <script>
-                 function myFunction() {
-                    var x = document.getElementById("myTopnav");
-                    if (x.className === "topnav") {
-                     x.className += " responsive";
-                    } else {
-                    x.className = "topnav";
-                   }
-                  }
-             </script>
-         </nav>
-         <header>
-            <div class="w3-center">
-                <h1>MO HAUKAI | ABOUT HAUKAI</h1>
-            </div>
-         </header>
-       <main id="wrapper">
-         
-          <hr style="color:white;">
-          <div class="w3-row">
-              <!--IMAGE https://www.pexels.com/photo/a-couple-holding-their-rabbit-pets-10649881/-->
-            <div class="w3-half">
-                <img id="left" src="./images/about_gimp.webp" alt="young couple holding rabbits">
-            </div>
-            <!--ABOUT INFO-->
-            <div class="w3-half w3-container">
-                <p>Kia ora!<br> Nau mai haere mai! <br> We are Wiremu and Soul Puru. Both born and raised in a small town north of Whangarei, Kerikeri!<br> We are both passionate about sharing our cultural knowledge with our guests and making your time with us a Te Ao Māori experience with the use of karakia for blessing food
-                    and other Māori culture integration into our restaurant.We specialize in traditional Maori kai and can't wait to share it with you!</p>
+              <!-- Close button-->
+              <button
+                onclick="document.getElementById('id01').style.display='none'"
+                type="button"
+                class="w3-button w3-black"
+              >
+                Close
+              </button>
+              <br /><br />
             </div>
           </div>
-           
-       </main>
-       <footer>
-        <div class=" w3-center"> 
-              <!-- Copyright-->
-              <div class="address">
-                <p >HAUKAI, 2022 <br> </p>
-               <a  class=" w3-left" href = "/contact.html"  > 
-                   <span >1 Island Street <br> Kerikeri <br> Bay of Islands <br>09 4014019 <br></span>
-               </a>  
-               <a  class=" w3-right" href = "info@haukai.com">
-                   <span> info@haukai.com</span>
-               </a>
-           
-         </div> 
-            <button  onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-border w3-black w3-hover-green">Privacy Statement</button>
-            <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-animate-opacity">
-                    <div class="w3-container w3-black">
-                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                        <h2>Privacy Statement</h2>
-                    </div>
-                    <div class="w3-container">
-                        <p class="modal">
-                            <br>This pricacy statement will help you understand what information we collect from you as well as how we will use and protect it. <br> We collect personal information from you, including the following:<br>
-                            <span><b>- Name<br>
-                                    - Email address<br>
-                                    - Contact information<br>
-                                    - Location<br></b></span>
-                                    Personal information is gathered through our 'Reservation form'. We collect this information in order to process your booking made on our website and
-                                    collect your location to ensure Google directions are correct. <br>
-                                    Haukai is committed to keeping your personal data confidential by implementing the latest software to safeguard all information.<br>
-                                    We will <strong>NOT</strong> disclose your information to ant third parties.
-                                    <br>We keep your information for 24 hours after the reservation date at which point we securely destroy.
-                                    <br>You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong.
-                                    <br>If you'd like to ask for a copy of your information, or to have it corrected, please contact us at <span class="bolded"> info@haukai.co.nz, or or 09 401 4019, or 1 Island Street, Kerkeri, Bay of Islands.</span> <br><br>
-                        </p>
-                        
-                        <!-- Close button-->
-                        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-black ">Close</button>
-                        <br><br>
-                    </div>
-                </div>
-                <script>
-                    // Get the modal
-                    var modal = document.getElementById('id01');                        
-                    // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                </script>
-            </div>
-           
-        </div> 
-       
+          <script>
+            // Get the modal
+            var modal = document.getElementById("id01");
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            };
+          </script>
+        </div>
+      </div>
     </footer>
-    </body>
+  </body>
 </html>

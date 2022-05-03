@@ -1,343 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>HAUKAI - Menu</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta charset="utf-8">
-        <link rel="stylesheet"  href="styles.css">   
-        <!-- W3.CSS framework import-->
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-       
-    </head>
-    <body>
-     <!-- Responsive Menu -->
-     <nav>
-        
-            <div class="topnav"  id="myTopnav">
-                <div class="w3-top w3-bar">
-                <a  href="/index.html" class="w3-bar-item w3-button w3-black w3-hover-sand">Home</a>
-                <a  href="/about.html" class="w3-bar-item w3-button w3-black w3-hover-sand">About</a>
-                <a  href="/contact.html" class="w3-bar-item w3-button w3-black w3-hover-sand">Contact</a>
-                <a  href="/menu.html"  class="active">Menu</a>
-                <a  href="/hours.html" class="w3-bar-item w3-button w3-black w3-hover-sand">Hours</a>
-                <a  href="/reservations.html" class="w3-bar-item w3-button w3-black w3-hover-sand">Reservations</a>
-                <a  href="/staff_login.html" class="w3-right w3-bar-item w3-button w3-black w3-hover-sand ">Staff log-in</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                      
-                <i class="fa fa-bars w3-white"></i>
-                </a>
-               
-              </div>
-            </div>
-            <script>
-                 function myFunction() {
-                    var x = document.getElementById("myTopnav");
-                    if (x.className === "topnav") {
-                     x.className += " responsive";
-                    } else {
-                    x.className = "topnav";
-                   }
-                  }
-             </script>
-       </nav>
-       <header>
-        <div class="w3-center">
-            <h1>KAI | FOOD</h1>
+  <head>
+    <title>HAUKAI - Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- W3.CSS framework import-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <body>
+    <!-- Responsive Menu -->
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <div class="w3-top w3-bar">
+          <a
+            href="/index.html"
+            class="w3-bar-item w3-button w3-black w3-hover-sand"
+            >Home</a
+          >
+          <a
+            href="/about.html"
+            class="w3-bar-item w3-button w3-black w3-hover-sand"
+            >About</a
+          >
+          <a
+            href="/contact.html"
+            class="w3-bar-item w3-button w3-black w3-hover-sand"
+            >Contact</a
+          >
+          <a href="/menu.html" class="active">Menu</a>
+          <a
+            href="/hours.html"
+            class="w3-bar-item w3-button w3-black w3-hover-sand"
+            >Hours</a
+          >
+          <a
+            href="/reservations.html"
+            class="w3-bar-item w3-button w3-black w3-hover-sand"
+            >Reservations</a
+          >
+          <a
+            href="/staff_login.html"
+            class="w3-right w3-bar-item w3-button w3-black w3-hover-sand"
+            >Staff log-in</a
+          >
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars w3-white"></i>
+          </a>
         </div>
-     </header>
-       <main id="wrapper">
-        
-       <hr style="color:white;">
-       <div class="w3-row">
-            <!--LEFT COLUMN-->
-         <div class="w3-half">
-            <div style="vertical-align: top;">
-                <!--APPETIZERS-->
-                <h3 class="menu_category"> APPETIZERS</h3>
-                <div class="menu_item">
-                    <p class="item">REWENA BREAD <span>10</span></p>
-                    <p class="description">Traditional Māori bread</p>
-                </div>
-                <div class="menu_item">
-                    <p class="item">PAUA FRITTER <span>16</span> </p>
-                    <p class="description">Finely diced pieces of paua, served with a side salad and horopito dressing</p>
-                </div>
-                <div class="menu_item">
-                    <p class="item">RAW FISH  <span>20</span> </p>
-                    <p class="description">Dried snapper fish marinated in coconut cream, served with tomatoes and spring onions</p>
-                </div>
-                <div class="menu_item">
-                    <p class="item">POACHED SALMON <span>22</span> </p>
-                    <p class="description">Salmon poached in an orange and pistachio glaze, served with rewena bread</p>
-                </div>
-                <div class="menu_item">
-                    <p class="item">SEAFOOD BASKET <span>25</span> </p>
-                    <p class="description">Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns</p>
-                </div> 
-                <hr style="color:white;">
-                <!--MAINS-->
-                <h3 class="menu_category"> MAINS</h3>
-                    <div class="menu_item">
-                      <p class="item">FISH OF THE DAY <span>25</span> </p>
-                      <p class="description">Beer battered fish and kumara fries, served with a side salad and homemade tartare</p>
-                   </div>
-                   <div class="menu_item">
-                      <p class="item">MUSSELS AND SCALLOPS <span>25</span> </p>
-                      <p class="description">Steamed mussel & scallop mousse, honey and soy broth</p>
-                  </div>
-                  <div class="menu_item">
-                     <p class="item">SEAFOOD CHOWDER  <span>30</span> </p>
-                     <p class="description">Creamy chowder filled with terakihi, prawn, hoki, scallops and mussels, served with flatbread</p>
-                  </div>
-                  <div class="menu_item">
-                     <p class="item">PORK BELLY <span>30</span> </p>
-                     <p class="description">Slow cooked pork belly served on a bed of apple slaw with roasted kumara, and crispy noodle</p>
-                  </div>
-                  <div class="menu_item">
-                     <p class="item">LAMB STEAK <span>33</span> </p>
-                     <p class="description">New Zealand Lamb coated in a kawakawa crumb, served with Dijon mustard glazed carrots, roasted butternut
-                      squash and a mushroom Jus</p>
-                  </div> 
-                  <div class="menu_item">
-                  <p class="item">VENISON <span>33</span> </p>
-                  <p class="description">Venison crusted with horopito, served with glazed plums, cabbage salad and red wine Jus</p>
-                  </div>  
-                  <!--IMAGE https://www.pexels.com/photo/ice-cream-with-chocolate-chips-topped-with-melted-chocolate-7144269/-->
-                  <div >
-                     <img  src="./images/dessert_gimp (1).webp" alt ="Chocolate sauce being poured on an icecream sundae" style="width: 100%;">
-                  </div>  
-                  <!--WHITE WINE-->
-                 <h3 class="menu_category"> WHITE WINE</h3>
-                     <table class="w3-table" >
-                         <tr>
-                             <th></th>
-                             <th ><p class="drinks">B/G</p></th>
-                         </tr>
-                         <tr >
-                             <td><p class="drinks">Spade Oak Pinot Gris, 2011, Gisborne</p></td>
-                             <td><p>40/10</p></td>
-                         </tr>
-                         <tr >
-                             <td><p class="drinks">Maude Pinot Gris, 2017, Otago</p></td>
-                             <td><p>49.5/11</p></td>
-                         </tr>
-                         <tr >
-                             <td><p class="drinks">Charles Wiffen Chardonnay, 2013, Otago</p></td>
-                             <td><p>48/11</p></td>
-                         </tr>
-                         <tr >
-                             <td><p class="drinks">Amisfield, Riesling, 2016, Otago</p></td>
-                             <td><p>53/13</p></td>
-                         </tr>
-                         <tr >
-                             <td><p class="drinks">Lamont Riesling, 2010, Otago</p></td>
-                             <td><p>57/13</p></td>
-                         </tr>
-                         <tr >
-                              <td><p class="drinks">Elephant Hill Viognier, 2013, Hawkes Bay</p></td>
-                              <td><p>55/12</p></td>
-                         </tr>
-                         <tr >
-                              <td><p class="drinks">Folium Sauvignon Blanc, 2011, Marlborough</p></td>
-                              <td><p>52/11</p></td>
-                         </tr>
-                         <tr >
-                              <td><p class="drinks">Billecart-Salmon Brut Reserve, France</p></td>
-                              <td><p>120</p></td>
-                         </tr>   
-                     </table> 
-                 <hr style="color:white;">  
-                 <!--BEER AND CIDER-->
-                 <h2 class="menu_category"> BEER AND CIDER</h2>
-                   <table class="w3-table" >
-                      <tr >
-                         <td><p class="drinks">Garage project range </p></td>
-                         <td><p>11</p></td>
-                     </tr>
-                     <tr >
-                         <td><p class="drinks">Tuatara range</p></td>
-                         <td><p>11</p></td>
-                     </tr>
-                      <tr >
-                         <td><p class="drinks">Panhead range</p></td>
-                         <td><p>10</p></td>
-                     </tr>
-                     <tr >
-                          <td><p class="drinks">Coopers Ale</p></td>
-                          <td><p>10</p></td>
-                      </tr>
-                      <tr >
-                          <td><p class="drinks">Lamont Riesling, 2010, Otago</p></td>
-                          <td><p>57/13</p></td>
-                     </tr>
-                     <tr >
-                          <td><p class="drinks">Heineken</p></td>
-                          <td><p>11</p></td>
-                     </tr>
-                     <tr >
-                          <td><p class="drinks">Moa Cider</p></td>
-                          <td><p>10</p></td>
-                     </tr>
-                     <tr >
-                         <td><p class="drinks">Crooked Cider</p></td>
-                         <td><p>10</p></td>
-                     </tr>   
-                 </table>
-             </div>
-         </div>
-         <!--RIGHT COLUMN-->
-         <div class="w3-half w3-container">
-                <!--IMAGE https://www.pexels.com/photo/vegetable-dish-with-meat-on-top-8753750/-->
-                <div >
-                    <img  src="images/main_gimp (1).webp" alt ="Roast meal plated with vegetables">
-                </div>
-                <!--DESSERTS-->
-              <h3 class="menu_category"> DESSERTS</h3>
-               <div class="menu_item">
-                 <p class="item">KĀPITI ICE CREAM <span>10</span> </p>
-                 <p class="description">Check for daily specials</p>
-               </div>
-               <div class="menu_item">
-                 <p class="item">STEAM PUDDING <span>12</span> </p>
-                 <p class="description">Golden syrup flavoured steam pudding, served with vanilla ice cream</p>
-               </div>
-               <div class="menu_item">
-                 <p class="item">MINI PAVLOVA <span>16</span> </p>
-                 <p class="description">Mini Pavlova served with kawakawa and lemon infused cream and fresh fruit</p>
-               </div>
-               <div class="menu_item">
-                 <p class="item">BANOFFEE PIE <span>16</span> </p>
-                 <p class="description">Toffee, fresh bananas and fresh cream</p>
-               </div>
-              <hr style="color:white;">
-              <!--RED WINE-->
-              <h3 class="menu_category"> RED WINE</h3>
-                <table class="w3-table" >
-                  <tr>
-                     <th></th>
-                     <th ><p class="drinks">B/G</p></th>
-                  </tr>
-                  <tr >
-                     <td><p class="drinks">Terrace Edge Pinot Noir, 2012, Wairarapa</p></td>
-                     <td><p>53/13</p></td>
-                  </tr>
-                  <tr >
-                     <td><p class="drinks">Altitude Pinot Noir, 2010, Marlborough</p></td>
-                     <td><p>64/15</p></td>
-                  </tr>
-                  <tr >
-                     <td><p class="drinks">Greystone Pinot Noir, 2012, Wairarapa</p></td>
-                     <td><p>73/17</p></td>
-                  </tr>
-                  <tr >
-                     <td><p class="drinks">Terrace Edge, Syrah, 2012 Wairarapa</p></td>
-                     <td><p>53/13</p></td>
-                  </tr>
-                      <tr >
-                      <td><p class="drinks">Altitude Syrah, 2010 Marlborough</p></td>
-                      <td><p>64/15</p></td>
-                  </tr>
-                  <tr >
-                      <td><p class="drinks">Greystone Syrah, 2012, Wairarapa</p></td>
-                      <td><p>73/17</p></td>
-                  </tr>
-                  <tr >
-                      <td><p class="drinks">Altitude Pinot Noir, 2010, Marlborough</p></td>
-                      <td><p>64/15</p></td>
-                 </tr>
-                 <tr >
-                     <td><p class="drinks">Pegasus Bay Pinot Noir, 2013, Waipara</p></td>
-                     <td><p>110</p></td>
-                 </tr>   
-             </table>
-             <!--IMAGE https://www.pexels.com/photo/restaurant-love-romantic-dinner-3044/-->
-             <div >
-                  <img src="./images/wine_gimp (1).webp" alt ="Red wine being poured into a glass" style="width: 100%;">
-             </div> 
-             <!--NON-ALCHOHOLIC-->
-             <h3 class="menu_category"> NON-ALCOHOLIC</h3>
-                 <table class="w3-table" >
-                     <tr >
-                         <td><p class="drinks">Mineral water</p></td>
-                         <td><p>4.00</p></td>
-                     </tr>
-                     <tr >
-                         <td><p class="drinks">Soft drinks </p></td>
-                         <td><p>4.00</p></td>
-                     </tr>
-                     <tr >
-                         <td><p class="drinks">Juice</p></td>
-                         <td><p>4.00</p></td>
-                     </tr>
-                     <tr >    
-                         <td><p class="drinks">Coffee</p></td>
-                         <td><p>4.50</p></td>
-                     </tr>
-                     <tr >
-                         <td><p class="drinks">Tea</p></td>
-                         <td><p>3.50</p></td>
-                     </tr>  
-                 </table>
-             </div>
-         </div>
-       
-
-       </main>
-       <footer>
-        <div class=" w3-center"> 
-              <!-- Copyright-->
-              <div class="address">
-                <p >HAUKAI, 2022 <br> </p>
-               <a  class=" w3-left" href = "/contact.html"  > 
-                <span >1 Island Street <br> Kerikeri <br> Bay of Islands <br>09 401 4019 <br></span>
-               </a>  
-               <a  class=" w3-right" href = "info@haukai.com">
-                   <span> info@haukai.com</span>
-               </a>
-           
-         </div> 
-            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-border w3-black w3-hover-green">Privacy Statement</button>
-            <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-animate-opacity">
-                    <div class="w3-container w3-black">
-                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                        <h2>Privacy Statement</h2>
-                    </div>
-                    <div class="w3-container">
-                        <p class="modal">
-                            <br>This pricacy statement will help you understand what information we collect from you as well as how we will use and protect it. <br> We collect personal information from you, including the following:<br>
-                            <span><b>- Name<br>
-                                    - Email address<br>
-                                    - Contact information<br>
-                                    - Location<br></b></span>
-                                    Personal information is gathered through our 'Reservation form'. We collect this information in order to process your booking made on our website and
-                                    collect your location to ensure Google directions are correct. <br>
-                                    Haukai is committed to keeping your personal data confidential by implementing the latest software to safeguard all information.<br>
-                                    We will <strong>NOT</strong> disclose your information to ant third parties.
-                                    <br>We keep your information for 24 hours after the reservation date at which point we securely destroy.
-                                    <br>You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong.
-                                    <br>If you'd like to ask for a copy of your information, or to have it corrected, please contact us at <span class="bolded"> info@haukai.co.nz, or or 09 401 4019, or 1 Island Street, Kerkeri, Bay of Islands.</span> <br><br>
-                        </p>
-                        
-                        <!-- Close button-->
-                        <button  onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-black ">Close</button>
-                        <br><br>
-                    </div>
-                </div>
-                <script>
-                    // Get the modal
-                    var modal = document.getElementById('id01');                        
-                    // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                </script>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+    </nav>
+    <header>
+      <div class="w3-center">
+        <h1>KAI | FOOD</h1>
+      </div>
+    </header>
+    <main id="wrapper">
+      <hr style="color: white" />
+      <div class="w3-row">
+        <!--LEFT COLUMN-->
+        <div class="w3-half">
+          <div style="vertical-align: top">
+            <!--APPETIZERS-->
+            <h3 class="menu_category">APPETIZERS</h3>
+            <div class="menu_item">
+              <p class="item">REWENA BREAD <span>10</span></p>
+              <p class="description">Traditional Māori bread</p>
             </div>
-           
-        </div> 
-       
+            <div class="menu_item">
+              <p class="item">PAUA FRITTER <span>16</span></p>
+              <p class="description">
+                Finely diced pieces of paua, served with a side salad and
+                horopito dressing
+              </p>
+            </div>
+            <div class="menu_item">
+              <p class="item">RAW FISH <span>20</span></p>
+              <p class="description">
+                Dried snapper fish marinated in coconut cream, served with
+                tomatoes and spring onions
+              </p>
+            </div>
+            <div class="menu_item">
+              <p class="item">POACHED SALMON <span>22</span></p>
+              <p class="description">
+                Salmon poached in an orange and pistachio glaze, served with
+                rewena bread
+              </p>
+            </div>
+            <div class="menu_item">
+              <p class="item">SEAFOOD BASKET <span>25</span></p>
+              <p class="description">
+                Crumbed mussels, salt and pepper squid, crumbed hoki bites and
+                garlic prawns
+              </p>
+            </div>
+            <hr style="color: white" />
+            <!--MAINS-->
+            <h3 class="menu_category">MAINS</h3>
+            <div class="menu_item">
+              <p class="item">FISH OF THE DAY <span>25</span></p>
+              <p class="description">
+                Beer battered fish and kumara fries, served with a side salad
+                and homemade tartare
+              </p>
+            </div>
+            <div class="menu_item">
+              <p class="item">MUSSELS AND SCALLOPS <span>25</span></p>
+              <p class="description">
+                Steamed mussel & scallop mousse, honey and soy broth
+              </p>
+            </div>
+            <div class="menu_item">
+              <p class="item">SEAFOOD CHOWDER <span>30</span></p>
+              <p class="description">
+                Creamy chowder filled with terakihi, prawn, hoki, scallops and
+                mussels, served with flatbread
+              </p>
+            </div>
+            <div class="menu_item">
+              <p class="item">PORK BELLY <span>30</span></p>
+              <p class="description">
+                Slow cooked pork belly served on a bed of apple slaw with
+                roasted kumara, and crispy noodle
+              </p>
+            </div>
+            <div class="menu_item">
+              <p class="item">LAMB STEAK <span>33</span></p>
+              <p class="description">
+                New Zealand Lamb coated in a kawakawa crumb, served with Dijon
+                mustard glazed carrots, roasted butternut squash and a mushroom
+                Jus
+              </p>
+            </div>
+            <div class="menu_item">
+              <p class="item">VENISON <span>33</span></p>
+              <p class="description">
+                Venison crusted with horopito, served with glazed plums, cabbage
+                salad and red wine Jus
+              </p>
+            </div>
+            <!--IMAGE https://www.pexels.com/photo/ice-cream-with-chocolate-chips-topped-with-melted-chocolate-7144269/-->
+            <div>
+              <img
+                src="./images/dessert_gimp (1).webp"
+                alt="Chocolate sauce being poured on an icecream sundae"
+                style="width: 100%"
+              />
+            </div>
+            <!--WHITE WINE-->
+            <h3 class="menu_category">WHITE WINE</h3>
+            <table class="w3-table">
+              <tr>
+                <th></th>
+                <th><p class="drinks">B/G</p></th>
+              </tr>
+              <tr>
+                <td>
+                  <p class="drinks">Spade Oak Pinot Gris, 2011, Gisborne</p>
+                </td>
+                <td><p>40/10</p></td>
+              </tr>
+              <tr>
+                <td><p class="drinks">Maude Pinot Gris, 2017, Otago</p></td>
+                <td><p>49.5/11</p></td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="drinks">Charles Wiffen Chardonnay, 2013, Otago</p>
+                </td>
+                <td><p>48/11</p></td>
+              </tr>
+              <tr>
+                <td><p class="drinks">Amisfield, Riesling, 2016, Otago</p></td>
+                <td><p>53/13</p></td>
+              </tr>
+              <tr>
+                <td><p class="drinks">Lamont Riesling, 2010, Otago</p></td>
+                <td><p>57/13</p></td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="drinks">Elephant Hill Viognier, 2013, Hawkes Bay</p>
+                </td>
+                <td><p>55/12</p></td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="drinks">
+                    Folium Sauvignon Blanc, 2011, Marlborough
+                  </p>
+                </td>
+                <td><p>52/11</p></td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="drinks">Billecart-Salmon Brut Reserve, France</p>
+                </td>
+                <td><p>120</p></td>
+              </tr>
+            </table>
+            <hr style="color: white" />
+            <!--BEER AND CIDER-->
+            <h2 class="menu_category">BEER AND CIDER</h2>
+            <table class="w3-table">
+              <tr>
+                <td><p class="drinks">Garage project range</p></td>
+                <td><p>11</p></td>
+              </tr>
+              <tr>
+                <td><p class="drinks">Tuatara range</p></td>
+                <td><p>11</p></td>
+              </tr>
+              <tr>
+                <td><p class="drinks">Panhead range</p></td>
+                <td><p>10</p></td>
+              </tr>
+              <tr>
+                <td><p class="drinks">Coopers Ale</p></td>
+                <td><p>10</p></td>
+              </tr>
+              <tr>
+                <td><p class="drinks">Lamont Riesling, 2010, Otago</p></td>
+                <td><p>57/13</p></td>
+              </tr>
+              <tr>
+                <td><p class="drinks">Heineken</p></td>
+                <td><p>11</p></td>
+              </tr>
+              <tr>
+                <td><p class="drinks">Moa Cider</p></td>
+                <td><p>10</p></td>
+              </tr>
+              <tr>
+                <td><p class="drinks">Crooked Cider</p></td>
+                <td><p>10</p></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!--RIGHT COLUMN-->
+        <div class="w3-half w3-container">
+          <!--IMAGE https://www.pexels.com/photo/vegetable-dish-with-meat-on-top-8753750/-->
+          <div>
+            <img
+              src="images/main_gimp (1).webp"
+              alt="Roast meal plated with vegetables"
+            />
+          </div>
+          <!--DESSERTS-->
+          <h3 class="menu_category">DESSERTS</h3>
+          <div class="menu_item">
+            <p class="item">KĀPITI ICE CREAM <span>10</span></p>
+            <p class="description">Check for daily specials</p>
+          </div>
+          <div class="menu_item">
+            <p class="item">STEAM PUDDING <span>12</span></p>
+            <p class="description">
+              Golden syrup flavoured steam pudding, served with vanilla ice
+              cream
+            </p>
+          </div>
+          <div class="menu_item">
+            <p class="item">MINI PAVLOVA <span>16</span></p>
+            <p class="description">
+              Mini Pavlova served with kawakawa and lemon infused cream and
+              fresh fruit
+            </p>
+          </div>
+          <div class="menu_item">
+            <p class="item">BANOFFEE PIE <span>16</span></p>
+            <p class="description">Toffee, fresh bananas and fresh cream</p>
+          </div>
+          <hr style="color: white" />
+          <!--RED WINE-->
+          <h3 class="menu_category">RED WINE</h3>
+          <table class="w3-table">
+            <tr>
+              <th></th>
+              <th><p class="drinks">B/G</p></th>
+            </tr>
+            <tr>
+              <td>
+                <p class="drinks">Terrace Edge Pinot Noir, 2012, Wairarapa</p>
+              </td>
+              <td><p>53/13</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p class="drinks">Altitude Pinot Noir, 2010, Marlborough</p>
+              </td>
+              <td><p>64/15</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p class="drinks">Greystone Pinot Noir, 2012, Wairarapa</p>
+              </td>
+              <td><p>73/17</p></td>
+            </tr>
+            <tr>
+              <td><p class="drinks">Terrace Edge, Syrah, 2012 Wairarapa</p></td>
+              <td><p>53/13</p></td>
+            </tr>
+            <tr>
+              <td><p class="drinks">Altitude Syrah, 2010 Marlborough</p></td>
+              <td><p>64/15</p></td>
+            </tr>
+            <tr>
+              <td><p class="drinks">Greystone Syrah, 2012, Wairarapa</p></td>
+              <td><p>73/17</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p class="drinks">Altitude Pinot Noir, 2010, Marlborough</p>
+              </td>
+              <td><p>64/15</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p class="drinks">Pegasus Bay Pinot Noir, 2013, Waipara</p>
+              </td>
+              <td><p>110</p></td>
+            </tr>
+          </table>
+          <!--IMAGE https://www.pexels.com/photo/restaurant-love-romantic-dinner-3044/-->
+          <div>
+            <img
+              src="./images/wine_gimp (1).webp"
+              alt="Red wine being poured into a glass"
+              style="width: 100%"
+            />
+          </div>
+          <!--NON-ALCHOHOLIC-->
+          <h3 class="menu_category">NON-ALCOHOLIC</h3>
+          <table class="w3-table">
+            <tr>
+              <td><p class="drinks">Mineral water</p></td>
+              <td><p>4.00</p></td>
+            </tr>
+            <tr>
+              <td><p class="drinks">Soft drinks</p></td>
+              <td><p>4.00</p></td>
+            </tr>
+            <tr>
+              <td><p class="drinks">Juice</p></td>
+              <td><p>4.00</p></td>
+            </tr>
+            <tr>
+              <td><p class="drinks">Coffee</p></td>
+              <td><p>4.50</p></td>
+            </tr>
+            <tr>
+              <td><p class="drinks">Tea</p></td>
+              <td><p>3.50</p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="w3-center">
+        <!-- Copyright-->
+        <div class="address">
+          <p>HAUKAI, 2022 <br /></p>
+          <a class="w3-left" href="/contact.html">
+            <span
+              >1 Island Street <br />
+              Kerikeri <br />
+              Bay of Islands <br />09 401 4019 <br
+            /></span>
+          </a>
+          <a class="w3-right" href="info@haukai.com">
+            <span> info@haukai.com</span>
+          </a>
+        </div>
+        <button
+          onclick="document.getElementById('id01').style.display='block'"
+          class="w3-button w3-border w3-black w3-hover-green"
+        >
+          Privacy Statement
+        </button>
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-animate-opacity">
+            <div class="w3-container w3-black">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright"
+                >&times;</span
+              >
+              <h2>Privacy Statement</h2>
+            </div>
+            <div class="w3-container">
+              <p class="modal">
+                <br />This pricacy statement will help you understand what
+                information we collect from you as well as how we will use and
+                protect it. <br />
+                We collect personal information from you, including the
+                following:<br />
+                <span
+                  ><b
+                    >- Name<br />
+                    - Email address<br />
+                    - Contact information<br />
+                    - Location<br /></b
+                ></span>
+                Personal information is gathered through our 'Reservation form'.
+                We collect this information in order to process your booking
+                made on our website and collect your location to ensure Google
+                directions are correct. <br />
+                Haukai is committed to keeping your personal data confidential
+                by implementing the latest software to safeguard all
+                information.<br />
+                We will <strong>NOT</strong> disclose your information to ant
+                third parties. <br />We keep your information for 24 hours after
+                the reservation date at which point we securely destroy.
+                <br />You have the right to ask for a copy of any personal
+                information we hold about you, and to ask for it to be corrected
+                if you think it is wrong. <br />If you'd like to ask for a copy
+                of your information, or to have it corrected, please contact us
+                at
+                <span class="bolded">
+                  info@haukai.co.nz, or or 09 401 4019, or 1 Island Street,
+                  Kerkeri, Bay of Islands.</span
+                >
+                <br /><br />
+              </p>
+
+              <!-- Close button-->
+              <button
+                onclick="document.getElementById('id01').style.display='none'"
+                type="button"
+                class="w3-button w3-black"
+              >
+                Close
+              </button>
+              <br /><br />
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("id01");
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            };
+          </script>
+        </div>
+      </div>
     </footer>
-    </body>
+  </body>
 </html>

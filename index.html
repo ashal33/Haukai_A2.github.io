@@ -1,196 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>HAUKAI - Home page</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta charset="utf-8">
-        <meta http-equiv="Cache-control" content="public, max-age=3600, must-revalidate">
-          <!-- SEO-->
-          <meta name="keywords" content="traditional Maori food, Maori restaurant, restaurant Kerikeri, restaurant Bay of Islands">
-          <meta name="description" content="Maori restaurant in Kerikeri Bay of Islands, New Zealand "> 
-          <link rel="stylesheet"  href="styles.css">   
-         <!-- W3.CSS framework import-->
-         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-          
-         <script>
-            //determines if the restaurant is open or closed based on
-            // curent time and day of the week
-            function isOpen() {
-                var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var isOpen = "Open";
-                var today = new Date();
-                var opens = new Date();
-                opens.setHours(17,0,0); // 5.00 pm
-                if (today.getDay()==1 || today.getDay()==2 ) {
-                    isOpen="Closed";
-                } else {
-                    if (today.getHours()< opens) {
-                        isOpen = "Open from 5pm";
-                        }  
-                }
-                document.getElementById("availability_info").innerHTML = "<span >Today, "+
-                    today.toLocaleDateString("en-US", options)+"<br> We are "+isOpen+"<br> Tables "+tablesAvailable()+"</span>";
+  <head>
+    <title>HAUKAI - Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Cache-control"
+      content="public, max-age=3600, must-revalidate"
+    />
+    <!-- SEO-->
+    <meta
+      name="keywords"
+      content="traditional Maori food, Maori restaurant, restaurant Kerikeri, restaurant Bay of Islands"
+    />
+    <meta
+      name="description"
+      content="Maori restaurant in Kerikeri Bay of Islands, New Zealand "
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- W3.CSS framework import-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <script>
+      //determines if the restaurant is open or closed based on
+      // curent time and day of the week
+      function isOpen() {
+        var options = {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        };
+        var isOpen = "Open";
+        var today = new Date();
+        var opens = new Date();
+        opens.setHours(17, 0, 0); // 5.00 pm
+        if (today.getDay() == 1 || today.getDay() == 2) {
+          isOpen = "Closed";
+        } else {
+          if (today.getHours() < opens) {
+            isOpen = "Open from 5pm";
+          }
+        }
+        document.getElementById("availability_info").innerHTML =
+          "<span >Today, " +
+          today.toLocaleDateString("en-US", options) +
+          "<br> We are " +
+          isOpen +
+          "<br> Tables " +
+          tablesAvailable() +
+          "</span>";
+      }
+      //function to send request to server to check if tables are avialable
+      //will be developed later
+      // for now just return hardcored value "available"
+      function tablesAvailable() {
+        return "available";
+      }
+    </script>
+  </head>
+  <body onload="isOpen()">
+    <header class="banner">
+      <!-- Responsive Menu -->
+      <nav>
+        <div class="topnav" id="myTopnav">
+          <div class="w3-top w3-bar">
+            <a href="/index.html" class="active">Home</a>
+            <a
+              href="/about.html"
+              class="w3-bar-item w3-button w3-black w3-hover-sand"
+              >About</a
+            >
+            <a
+              href="/contact.html"
+              class="w3-bar-item w3-button w3-black w3-hover-sand"
+              >Contact</a
+            >
+            <a
+              href="/menu.html"
+              class="w3-bar-item w3-button w3-black w3-hover-sand"
+              >Menu</a
+            >
+            <a
+              href="/hours.html"
+              class="w3-bar-item w3-button w3-black w3-hover-sand"
+              >Hours</a
+            >
+            <a
+              href="/reservations.html"
+              class="w3-bar-item w3-button w3-black w3-hover-sand"
+              >Reservations</a
+            >
+            <a
+              href="/staff_login.html"
+              class="w3-right w3-bar-item w3-button w3-black w3-hover-sand"
+              >Staff log-in</a
+            >
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+              ><i class="fa fa-bars w3-white"></i
+            ></a>
+          </div>
+        </div>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
             }
-            //function to send request to server to check if tables are avialable
-            //will be developed later
-            // for now just return hardcored value "available"
-            function tablesAvailable() {
-                return "available";
-            }   
-        </script>    
-       </head>
-       <body onload="isOpen()" >
-          <header class="banner">
-              <!-- Responsive Menu -->
-             <nav>
-        
-                 <div class="topnav"  id="myTopnav">
-               <div class="w3-top w3-bar">
-                  <a href="/index.html" class="active">Home</a>
-                  <a href="/about.html" class="w3-bar-item w3-button w3-black w3-hover-sand">About</a>
-                  <a href="/contact.html" class="w3-bar-item w3-button w3-black w3-hover-sand">Contact</a>
-                  <a href="/menu.html" class="w3-bar-item w3-button w3-black w3-hover-sand "  >Menu</a>
-                  <a href="/hours.html" class="w3-bar-item w3-button w3-black w3-hover-sand ">Hours</a>
-                  <a href="/reservations.html" class=" w3-bar-item w3-button w3-black w3-hover-sand " >Reservations</a>
-                  <a href="/staff_login.html" class="w3-right w3-bar-item w3-button w3-black w3-hover-sand ">Staff log-in</a>
-                  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars w3-white"></i></a>
-              </div>
-               </div>
-              <script>
-             function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                 x.className += " responsive";
-                } else {
-                x.className = "topnav";
-               }
-              }
-         </script>
+          }
+        </script>
       </nav>
       <div class="container">
-          <div class="center">
-             <h1 aria-level="1" style="font-size:100px; background-color: black; border-style: double; border-width: 5px; border-color: white;">HAUKAI</h1>
-             <br>
-             <h2 aria-level="2" style="background-color: black; border-style: solid; border-width: 2px; border-color: white;">Naumai haere mai</h2>
-             <br>
-              <!-- BOOK BUTTON -->
-              <a class="w3-button w3-green w3-hover-white w3-hover-text-black" id="reservation_button" href = "/reservations.html">
-                  MAKE A RESERVATION
+        <div class="center">
+          <h1
+            aria-level="1"
+            style="
+              font-size: 100px;
+              background-color: black;
+              border-style: double;
+              border-width: 5px;
+              border-color: white;
+            "
+          >
+            HAUKAI
+          </h1>
+          <br />
+          <h2
+            aria-level="2"
+            style="
+              background-color: black;
+              border-style: solid;
+              border-width: 2px;
+              border-color: white;
+            "
+          >
+            Naumai haere mai
+          </h2>
+          <br />
+          <!-- BOOK BUTTON -->
+          <a
+            class="w3-button w3-green w3-hover-white w3-hover-text-black"
+            id="reservation_button"
+            href="/reservations.html"
+          >
+            MAKE A RESERVATION
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <hr style="color: white" />
+      <div class="w3-row">
+        <!--LEFT COLUMN-->
+        <div class="w3-half">
+          <div style="vertical-align: top">
+            <!--AVAILABLE TABLES-->
+            <div class="home">
+              <a href="/menu.html" class="compact">
+                <img
+                  src="./images/Menu_image_gimp (1).webp"
+                  alt="Plated food from the menu"
+                  style="width: 100%"
+                />
+                <h3>Take a look at our menu</h3>
               </a>
-         </div>
-     </div>                
-     </header>    
-            <main>
-        
-                <hr style="color:white;">
-                <div class="w3-row">
-                     <!--LEFT COLUMN-->
-                     <div class="w3-half">
-                         <div style="vertical-align: top;">
-                             <!--AVAILABLE TABLES-->
-                             <div class="home">
-                                <a href = "/menu.html"  class="compact" > 
-                                  <img src="./images/Menu_image_gimp (1).webp" alt="Plated food from the menu" style="width:100%">
-                                  <h3>Take a look at our menu </h3>
-                                   </a>
-                              </div>
-                              <br>
-                              <hr style="color:white;">
-                              <br>
-                              <!--LOCATION-->
-                              <div class="home">
-                                <a href="/hours.html" style="width:100%">
-                                  <h3> Opening hours</h3>
-                                         <p> Monday: Closed<br>
-                                             Tuesday: Closed<br>
-                                             Wednesday: 5pm-11pm<br>
-                                             Thursday: 5pm-11pm<br>
-                                             Friday: 5pm-11pm<br>
-                                             Saturday: 5pm-11pm<br>
-                                             Sunday: 5pm-11pm<br>
-                                         </p>
-                                  </a>
-                            </div>
-                         </div>
-                      </div>
-                      <!--RIGHT COLUMN-->
-                      <div class="w3-half w3-container">
-                            <div style="vertical-align: top;"> 
-                                <div class="home">
-                                    <h3>
-                                    <a href = "/reservations.html" id="availability_info" > 
-                                    <span >We are open WEDNESDAY-SUNDAY <br>from 5pm till 11pm </span>
-                                    </a> 
-                                    </h3>
-                               </div>
-                               <br>
-                               <hr style="color:white;">
-                               <br>
-                               <div class="home">
-                                <a href = "https://naumainz.studyinnewzealand.govt.nz/goals/learn-about-maori-culture?msclkid=94772933be2911eca50266efd201e0db"  class="compact" > 
-                                 <img src="./images/fern_gimp (1).webp" alt="fern">
-                                 <h3>Learn more about our Maori culture </h3>
-                               </a>
-                             </div>
-                          </div>
-                     </div>
-                 </div>
-             </main>         
-      <footer>
-        <div class=" w3-center"> 
-              <!-- Copyright-->
-              <div class="address">
-                <p >HAUKAI, 2022 <br> </p>
-               <a  class=" w3-left" href = "/contact.html"  > 
-                   <span >1 Island Street <br> Kerikeri <br> Bay of Islands <br>09 401 4019 <br></span>
-               </a>  
-               <a class=" w3-right" href = "info@haukai.com">
-                   <span> info@haukai.com</span>
-               </a>
-           
-         </div> 
-            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-border w3-black w3-hover-green">Privacy Statement</button>
-            <div id="id01" class="w3-modal">
-                <div class="w3-modal-content w3-animate-opacity">
-                    <div class="w3-container w3-black">
-                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                        <h2 aria-level="2" >Privacy Statement</h2>
-                    </div>
-                    <div class="w3-container">
-                        <p class="modal">
-                            <br>This pricacy statement will help you understand what information we collect from you as well as how we will use and protect it. <br> We collect personal information from you, including the following:<br>
-                            <span><b>- Name<br>
-                                    - Email address<br>
-                                    - Contact information<br>
-                                    - Location<br></b></span>
-                                    Personal information is gathered through our 'Reservation form'. We collect this information in order to process your booking made on our website and
-                                    collect your location to ensure Google directions are correct. <br>
-                                    Haukai is committed to keeping your personal data confidential by implementing the latest software to safeguard all information.<br>
-                                    We will <strong>NOT</strong> disclose your information to ant third parties.
-                                    <br>We keep your information for 24 hours after the reservation date at which point we securely destroy.
-                                    <br>You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong.
-                                    <br>If you'd like to ask for a copy of your information, or to have it corrected, please contact us at <span class="bolded"> info@haukai.co.nz, or or 09 401 4019, or 1 Island Street, Kerkeri, Bay of Islands.</span> <br><br>
-                        </p>
-                        
-                        <!-- Close button-->
-                        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-black ">Close</button>
-                        <br><br>
-                    </div>
-                </div>
-                <script>
-                    // Get the modal
-                    var modal = document.getElementById('id01');                        
-                    // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                </script>
             </div>
-           
-        </div> 
-       
+            <br />
+            <hr style="color: white" />
+            <br />
+            <!--LOCATION-->
+            <div class="home">
+              <a href="/hours.html" style="width: 100%">
+                <h3>Opening hours</h3>
+                <p>
+                  Monday: Closed<br />
+                  Tuesday: Closed<br />
+                  Wednesday: 5pm-11pm<br />
+                  Thursday: 5pm-11pm<br />
+                  Friday: 5pm-11pm<br />
+                  Saturday: 5pm-11pm<br />
+                  Sunday: 5pm-11pm<br />
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--RIGHT COLUMN-->
+        <div class="w3-half w3-container">
+          <div style="vertical-align: top">
+            <div class="home">
+              <h3>
+                <a href="/reservations.html" id="availability_info">
+                  <span
+                    >We are open WEDNESDAY-SUNDAY <br />from 5pm till 11pm
+                  </span>
+                </a>
+              </h3>
+            </div>
+            <br />
+            <hr style="color: white" />
+            <br />
+            <div class="home">
+              <a
+                href="https://naumainz.studyinnewzealand.govt.nz/goals/learn-about-maori-culture?msclkid=94772933be2911eca50266efd201e0db"
+                class="compact"
+              >
+                <img src="./images/fern_gimp (1).webp" alt="fern" />
+                <h3>Learn more about our Maori culture</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="w3-center">
+        <!-- Copyright-->
+        <div class="address">
+          <p>HAUKAI, 2022 <br /></p>
+          <a class="w3-left" href="/contact.html">
+            <span
+              >1 Island Street <br />
+              Kerikeri <br />
+              Bay of Islands <br />09 401 4019 <br
+            /></span>
+          </a>
+          <a class="w3-right" href="info@haukai.com">
+            <span> info@haukai.com</span>
+          </a>
+        </div>
+        <button
+          onclick="document.getElementById('id01').style.display='block'"
+          class="w3-button w3-border w3-black w3-hover-green"
+        >
+          Privacy Statement
+        </button>
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-animate-opacity">
+            <div class="w3-container w3-black">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright"
+                >&times;</span
+              >
+              <h2 aria-level="2">Privacy Statement</h2>
+            </div>
+            <div class="w3-container">
+              <p class="modal">
+                <br />This pricacy statement will help you understand what
+                information we collect from you as well as how we will use and
+                protect it. <br />
+                We collect personal information from you, including the
+                following:<br />
+                <span
+                  ><b
+                    >- Name<br />
+                    - Email address<br />
+                    - Contact information<br />
+                    - Location<br /></b
+                ></span>
+                Personal information is gathered through our 'Reservation form'.
+                We collect this information in order to process your booking
+                made on our website and collect your location to ensure Google
+                directions are correct. <br />
+                Haukai is committed to keeping your personal data confidential
+                by implementing the latest software to safeguard all
+                information.<br />
+                We will <strong>NOT</strong> disclose your information to ant
+                third parties. <br />We keep your information for 24 hours after
+                the reservation date at which point we securely destroy.
+                <br />You have the right to ask for a copy of any personal
+                information we hold about you, and to ask for it to be corrected
+                if you think it is wrong. <br />If you'd like to ask for a copy
+                of your information, or to have it corrected, please contact us
+                at
+                <span class="bolded">
+                  info@haukai.co.nz, or or 09 401 4019, or 1 Island Street,
+                  Kerkeri, Bay of Islands.</span
+                >
+                <br /><br />
+              </p>
+
+              <!-- Close button-->
+              <button
+                onclick="document.getElementById('id01').style.display='none'"
+                type="button"
+                class="w3-button w3-black"
+              >
+                Close
+              </button>
+              <br /><br />
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("id01");
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            };
+          </script>
+        </div>
+      </div>
     </footer>
-    </body>
+  </body>
 </html>
