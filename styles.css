@@ -175,3 +175,9 @@ img {
   letter-spacing: normal;
   font-size: 15px;
 }
+.menu_icon {
+  width: 5vw;
+  height: 1vh;
+  background-color: white;
+  margin: 6px 0;
+}
